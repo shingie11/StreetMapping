@@ -1,0 +1,80 @@
+i	A	0	0
+i	B	0	1
+i	C	0	2
+i	D	0	3
+i	E	0	4
+i	F	1	0
+i	G	1	1
+i	H	1	2
+i	I 	1	3
+i	J	1	4
+i	K	2	0
+i	L	2	1
+i	M	2	2
+i	N	2	3
+i	O	2	4
+i	P	3	0
+i	Q	3	1
+i	R	3	2
+i	S	3	3
+i	T	3	4
+i	U	4	0
+i	V	4	1
+i	W	4	2
+i	X	4	3
+i	Y	4	4
+r	AB	A	B	2
+r	AF	A	F	1
+r	AG	A	G	3
+r	BC	B	C	4
+r	BG	B	G	8
+r	CD	C	D	7
+r	CH	C	H	8
+r	CG	C	G	2
+r	CI	C	I	4
+r	DE	D	E	5
+r	DI	D	I	6
+r	EJ	E	J	1
+r	EI	E	I	2
+r	FG	F	G	1
+r	FK	F	K	6
+r	GH	G	H	1
+r	GL	G	L	2
+r	GK	G	K	3
+r	GM	G	M	4
+r	HI	H	I	1
+r	HM	H	M	9
+r	IJ	I	J	7
+r	IN	I	N	8
+r	IM	I	M	2
+r	IO	I	O	3
+r	JO	J	O	4
+r	KL	K	L	1
+r	KP	K	P	1
+r	KQ	K	Q	3
+r	LM	L	M	5
+r	LQ	L	Q	4
+r	MN	M	N	2
+r	MS	M	S	3
+r	MR	M	R	1
+r	MQ	M	Q	5
+r	NO	N	O	4
+r	NS	N	S	3
+r	OT	O	T	8
+r	PQ	P	Q	2
+r	PU	P	U	7
+r	QR	Q	R	1
+r	QU	Q	U	2
+r	QV	Q	V	3
+r	QW	Q	W	7
+r	RS	R	S	6
+r	RW	R	W	2
+r	ST	S	T	4
+r	SW	S	W	6
+r	SX	S	X	1
+r	SY	S	Y	4
+r	TY	T	Y	7
+r	UV	U	V	5
+r	VW	V	W	9
+r	WX	W	X	1
+r	XY	X	Y	1

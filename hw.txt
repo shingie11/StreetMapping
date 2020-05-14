@@ -1,0 +1,37 @@
+i	A	0	0
+i	B	0	1
+i	C	0	2
+i	D	0	3
+i	E	0	4
+i	F	1	0
+i	G	1	1
+i	H	1	2
+i	I 	1	3
+i	J	1	4
+i	K	2	0
+i	L	2	1
+i	M	2	2
+i	N	2	3
+i	O	2	4
+r	AB	A	B	2
+r	AF	A	F	1
+r	BC	B	C	4
+r	BG	B	G	3
+r	CD	C	D	3
+r	CH	C	H	2
+r	DE	D	E	6
+r	DI	D	I	2
+r	EJ	E	J	1
+r	FG	F	G	2
+r	FK	F	K	1
+r	GH	G	H	3
+r	GL	G	L	5
+r	HI	H	I	1
+r	HM	H	M	3
+r	IJ	I	J	1
+r	IN	I	N	1
+r	JO	J	O	2
+r	KL	K	L	2
+r	LM	L	M	2
+r	MN	M	N	1
+r	NO	N	O	5	
