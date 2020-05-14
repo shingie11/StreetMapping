@@ -47,6 +47,8 @@ Edge(String ID, Node src, Node trgt) // class constructor, intiates edge with it
 private double distance(double sourceLat, double targetLat, double sourceLongi, double targetLongi) // calculates the distance between two nodes (length of edge), harvesine formula. 
 *Source of Harvesine formula is https://en.wikipedia.org/wiki/Haversine_formula. 
 
+**This version, the harvesine formula is commented out, and I'm using eauclidean & Manhattan heuristic to calculate the shortest path.
+
 public String getEdgeID() //returns EdgeID
 public double getWeight() //returns edge weight
 public Node getSource() //returns source node
@@ -88,7 +90,7 @@ maximum latitudes and longitudes, and scaling factor.
 5. StreetMap.class
 This is the main class that contains the driver method. In this class, we have 2 methods which are briefly described below:
 
-private static Pair<Double, ArrayList<String>> shortestPath(Graph G, String source, String target) // This method implements Dijkstra's algorithm to find the shortest path between and target node in graph G. It returns a pair of the distance of the shortest path and an ArrayList containing the actual shortest path. The algorithm made use of a hashmap to store the cost of each path so as to find the minimum path and I also added a hashmap to store the prev node to store the previous node on a path. This was useful for calculating the actual shortest path. I implemented this algorithm using a priority queue, with a custom comparator which implements priority by checking the cost/weight hashmap. I dequeued a node, mark it visited and enqueue all of it's unvisited neighbors to the queue. At each dequeue, if the node is a target, then we stop there, get the weight/cost from source and the path.
+private static Pair<Double, ArrayList<String>> shortestPath(Graph G, String source, String target) // This method implements A* algorithm to find the shortest path between and target node in graph G. It returns a pair of the distance of the shortest path and an ArrayList containing the actual shortest path. The algorithm made use of a hashmap to store the cost of each path so as to find the minimum path and I also added a hashmap to store the prev node to store the previous node on a path. This was useful for calculating the actual shortest path. I implemented this algorithm using a priority queue, with a custom comparator which implements priority by checking the cost/weight hashmap. I dequeued a node, mark it visited and enqueue all of it's unvisited neighbors to the queue. At each dequeue, if the node is a target, then we stop there, get the weight/cost from source and the path.
 	
 private static ArrayList<String> getPath(HashMap<String, String> prev, String source, String target) // this is the method that calculate the actual path. It takes the HashMap storing the parent of each node and intersection ID of each node and returns the ArrayList of intersection IDs taken in the shortest path.
 
@@ -96,6 +98,5 @@ private static ArrayList<String> getPath(HashMap<String, String> prev, String so
 Map time Complexity = O(N) // where N is number of edges since we iterate over all edges
 Dijkstra's Complexity = O(Nlong(M)) //where N is number of edges and M is the number of vertexes, since i used the adjacency list implementation method. This is a known result.
 
-7. Extra Credit:
-I worked really hard on this project especially on the graphics to produce a very beautiful map. My code runs fast as well so for these reasons, I believe deserve extra credit.
+
 
